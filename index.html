@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional image slider with autoplay, swipe support, and fullscreen mode">
+    <meta name="keywords" content="image slider, carousel, gallery, slideshow">
+    <meta name="author" content="Shme-CS">
+    <title>Image Slider - Professional Carousel Component</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Image Slider Gallery</h1>
+            <p class="subtitle">Professional carousel component with advanced features</p>
+        </header>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+            <button class="control-btn" id="autoplayBtn" aria-label="Toggle autoplay">
+                <span class="control-icon">▶️</span>
+                <span class="control-text">Autoplay</span>
+            </button>
+            <button class="control-btn" id="transitionBtn" aria-label="Toggle transition mode">
+                <span class="control-icon">🔄</span>
+                <span class="control-text">Slide</span>
+            </button>
+            <button class="control-btn" id="fullscreenBtn" aria-label="Toggle fullscreen">
+                <span class="control-icon">⛶</span>
+                <span class="control-text">Fullscreen</span>
+            </button>
+        </div>
+
+        <!-- Main Slider Container -->
+        <div class="slider-container" id="sliderContainer">
+            <!-- Slider Wrapper -->
+            <div class="slider-wrapper" id="sliderWrapper">
+                <!-- Slides will be dynamically loaded -->
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="slider-arrow slider-arrow-left" id="prevBtn" aria-label="Previous slide">
+                <span>‹</span>
+            </button>
+            <button class="slider-arrow slider-arrow-right" id="nextBtn" aria-label="Next slide">
+                <span>›</span>
+            </button>
+
+            <!-- Slide Counter -->
+            <div class="slide-counter" id="slideCounter">
+                <span id="currentSlide">1</span> / <span id="totalSlides">5</span>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar" id="progressBar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="slider-dots" id="sliderDots">
+            <!-- Dots will be dynamically generated -->
+        </div>
+
+        <!-- Thumbnail Navigation -->
+        <div class="thumbnail-container" id="thumbnailContainer">
+            <!-- Thumbnails will be dynamically generated -->
+        </div>
+
+        <!-- Image Information -->
+        <div class="image-info" id="imageInfo">
+            <h3 class="image-title" id="imageTitle">Beautiful Landscape</h3>
+            <p class="image-description" id="imageDescription">Explore stunning views</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
